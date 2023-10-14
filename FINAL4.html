@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Final Webpage</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Josefin+Slab:ital,wght@0,200;1,200&display=swap');
+        /*
+        font-family: 'Cardo', serif;
+        font-family: 'Josefin Slab', serif;
+        */
+        body{
+            background-color: #5b5553;
+        }
+        header{
+            background-color: black;
+            padding: 3%;
+            letter-spacing: .05em;
+        }
+        #wrapper{
+            width: 80.56640625%;
+            margin: 0 auto;
+            background-color: #e5e5e5;
+        }
+        nav{
+            margin: 0 auto;
+            padding: 1% 0;
+            background-color: #b1a7a5;
+        }
+        nav ul{
+             width: 85.57575757575758%;
+             margin: 0 auto;
+        }
+        nav ul li{
+            display: inline;
+        }
+        #feature{
+            width: 81.32575757575758%;
+            margin: 3% auto 4% auto;
+            padding: 1.5% 2.25% 3.5% 2.25%;
+            background-color: #b1a7a5;
+            overflow: hidden;
+        }
+        .feature-img{
+            float: left;
+            width: 40%;
+        }
+        .feature-text{
+            float: left;
+            width: 58%
+            margin-left: 2%;
+            font-family: 'Josefin Slab', serif;
+            font-size: 1.25em;
+            font-weight: bold;
+            line-height: 105%;
+            letter-spacing: .05em;
+
+        }
+
+        #main-content{
+            width: 59.39393939393939%;
+            float: left;
+            margin: 2%;
+        }
+        .main-figure{
+            width: 32.50478011472275%;
+            margin-right: 9.56022944550669%;
+            float: right;
+        }
+        #sidebar{
+            width: 32.60606060606061%;
+            float: left;
+            margin: 2%;
+        }
+        .side-figure{
+            width: 88.0794701986755%;
+            margin: 0 auto;
+            padding: bottom: 2%;
+        }
+        figure img{
+            max-width: 100%
+        }
+        figure {
+            background-color: silver;
+        }
+        footer{
+            clear: left;
+            padding: 1%;
+        }
+        #feature h2{
+            margin-bottom: 2%;
+        }
+        p{
+            margin: 2.5% 0;
+        }
+        body{
+            font-family: 'Cardo', serif;
+        }
+        article>p{
+            line-height: 130%
+        }
+        h1{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 1.75em;
+            font-weight: bold;
+        }
+        h1, h2, h3, h4, h5, h6{
+            font-family: 'Josefin Sans', sans-serif;
+            color: crimson;
+        }
+        figcaption{
+            font-family: 'Josefin Slab', serif;
+            margin: 3%;
+            font-weight: bold;
+        }
+        #sidebar figcaption{
+            margin-bottom: 3%;
+        }
+        .nav-item{
+            display: inline-block;
+            margin-left: 2%
+        }
+        li.nav-item a:link{
+            color: red;
+        }
+        li.nav-item a:visited{
+            color: green;
+        }
+        li.nav-item a:hover{
+            color: purple;
+        }
+        li.nav-item a:active{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Absolute Strength</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="FINAL.html">page 1</a></li>
+            <li class="nav-item"><a href="FINAL2.html">page 2</a></li>
+            <li class="nav-item"><a href="FINAL3.html">page 3</a></li>
+            <li class="nav-item"><a href="FINAL5.html">page 5</a></li>
+        </ul>
+    </nav>
+    <div id="feature">
+        <h2>Who is Bane?</h2>
+        <img src="data:image/jpeg;base64,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" class="feature-img" />
+        <p class="feature-text">
+            Bane is a fictional supervillain in the Batman comic books and a prominent adversary of the Dark Knight. He is known for his incredible physical strength, intelligence, and strategic cunning. Bane's backstory is that he was born and raised in the prison of Santa Prisca, a fictional Caribbean island, where he served his father's life sentence. While in prison, he was subjected to experiments with the experimental drug known as "Venom," which significantly enhanced his physical attributes, making him one of the strongest and most formidable foes in the Batman universe.        </p>
+    </div>
+    <div id="main-content">
+        <article>
+            <h2>Brute Strength</h2>
+            <figure class="main-figure">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/10/Bane-Breaks-Batmans-Back-in-DC-Comics.jpg" />
+                <figcaption>
+                    <p>Batman: Knightfall</p>
+                </figcaption>
+            </figure>
+            <p>Bane is a formidable and complex character in the Batman mythos, known for his intelligence, brute strength, and his significant impact on the Dark Knight's world. Created by writer Chuck Dixon and artist Graham Nolan, Bane first appeared in "Batman: Vengeance of Bane" #1 in January 1993. He was born and raised in the fictional South American prison of Santa Prisca, where he served his father's life sentence. Bane's experiences in prison exposed him to violence, intellectual stimulation, and a dangerous drug called Venom that enhances his physical abilities. This combination of factors molded him into a formidable and cunning adversary.</p>
+        </article>
+        <article>
+            <h2>Complexity</h2>
+            <p>Despite his criminal activities, Bane is a character with depth and complexity. His troubled upbringing, his quest for self-improvement, and his sense of honor, however twisted, make him more than just a one-dimensional villain. Bane's motivations and character development have been explored in various comics and adaptations, revealing the many layers of this intriguing character. Overall, Bane's unique combination of physical prowess, intellectual acumen, and complex backstory has solidified his status as one of Batman's most enduring and compelling adversaries, making him a significant figure in the Batman mythos.</p>
+        </article>
+        <article>
+            <h2>Venom Drug</h2>
+            <p>One of Bane's defining characteristics is his remarkable physical strength. Thanks to the Venom drug, which he relies on to enhance his already impressive physical capabilities, Bane is one of the few villains in the Batman universe who can go toe-to-toe with the Dark Knight in a straight physical confrontation. However, Bane is not just a brute; he's also an intelligent strategist. He famously "broke the Bat" in the "Knightfall" storyline, where he deduced Batman's secret identity and systematically wore him down by releasing Arkham Asylum's inmates. Bane's calculated approach demonstrated that he's not merely a force of nature but a master tactician.</p>
+        </article>
+    </div>
+    <div id="sidebar">
+        <article>
+            <h2>Creation of Bane</h2>
+            <figure class="side-figure">
+                <img src="https://www.google.com/search?sca_esv=573369116&sxsrf=AM9HkKlvNzKnUA9ilqEZz0Rb_OR5x0QPZQ:1697253397344&q=bane+first+appearance&tbm=isch&source=lnms&sa=X&ved=2ahUKEwjupd7OyfSBAxX0pokEHcloCwYQ0pQJegQICRAB&biw=958&bih=945&dpr=1#imgrc=FhrrXCqTicBfFM" />
+                <figcaption>
+                    <p>Bane First Apperance</p>
+                </figcaption>
+            </figure>
+            <p>Bane was created by writer Chuck Dixon, artist Graham Nolan, and editor Dennis O'Neil. He made his first appearance in "Batman: Vengeance of Bane" #1, which was published by DC Comics in January 1993. Bane was introduced as a formidable adversary for Batman, and his character was notable for his extraordinary physical strength, intelligence, and cunning tactics. The character quickly gained popularity and has become one of Batman's most iconic and enduring villains, known for his unique combination of attributes and his role in significant storylines such as "Knightfall," where he famously "broke the Bat."</p>
+        </article>
+    </div>
+    <footer>
+        <p><small>footer text</small></p>
+    </footer>
+</div>
+</body>
+</html>

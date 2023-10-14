@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Final Webpage</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&family=Josefin+Slab:ital,wght@0,200;1,200&display=swap');
+        /*
+        font-family: 'Cardo', serif;
+        font-family: 'Josefin Slab', serif;
+        */
+        body{
+            background-color: #5b5553;
+        }
+        header{
+            background-color: black;
+            padding: 3%;
+            letter-spacing: .05em;
+        }
+        #wrapper{
+            width: 80.56640625%;
+            margin: 0 auto;
+            background-color: #e5e5e5;
+        }
+        nav{
+            margin: 0 auto;
+            padding: 1% 0;
+            background-color: #b1a7a5;
+        }
+        nav ul{
+             width: 85.57575757575758%;
+             margin: 0 auto;
+        }
+        nav ul li{
+            display: inline;
+        }
+        #feature{
+            width: 81.32575757575758%;
+            margin: 3% auto 4% auto;
+            padding: 1.5% 2.25% 3.5% 2.25%;
+            background-color: #b1a7a5;
+            overflow: hidden;
+        }
+        .feature-img{
+            float: left;
+            width: 40%;
+        }
+        .feature-text{
+            float: left;
+            width: 58%
+            margin-left: 2%;
+            font-family: 'Josefin Slab', serif;
+            font-size: 1.25em;
+            font-weight: bold;
+            line-height: 105%;
+            letter-spacing: .05em;
+
+        }
+
+        #main-content{
+            width: 59.39393939393939%;
+            float: left;
+            margin: 2%;
+        }
+        .main-figure{
+            width: 32.50478011472275%;
+            margin-right: 9.56022944550669%;
+            float: right;
+        }
+        #sidebar{
+            width: 32.60606060606061%;
+            float: left;
+            margin: 2%;
+        }
+        .side-figure{
+            width: 88.0794701986755%;
+            margin: 0 auto;
+            padding: bottom: 2%;
+        }
+        figure img{
+            max-width: 100%
+        }
+        figure {
+            background-color: silver;
+        }
+        footer{
+            clear: left;
+            padding: 1%;
+        }
+        #feature h2{
+            margin-bottom: 2%;
+        }
+        p{
+            margin: 2.5% 0;
+        }
+        body{
+            font-family: 'Cardo', serif;
+        }
+        article>p{
+            line-height: 130%
+        }
+        h1{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        h2{
+            font-size: 1.75em;
+            font-weight: bold;
+        }
+        h1, h2, h3, h4, h5, h6{
+            font-family: 'Josefin Sans', sans-serif;
+            color: crimson;
+        }
+        figcaption{
+            font-family: 'Josefin Slab', serif;
+            margin: 3%;
+            font-weight: bold;
+        }
+        #sidebar figcaption{
+            margin-bottom: 3%;
+        }
+        .nav-item{
+            display: inline-block;
+            margin-left: 2%
+        }
+        li.nav-item a:link{
+            color: red;
+        }
+        li.nav-item a:visited{
+            color: green;
+        }
+        li.nav-item a:hover{
+            color: purple;
+        }
+        li.nav-item a:active{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Deathstroke</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="nav-item"><a href="FINAL.html">page 1</a></li>
+            <li class="nav-item"><a href="FINAL2.html">page 2</a></li>
+            <li class="nav-item"><a href="FINAL3.html">page 3</a></li>
+            <li class="nav-item"><a href="FINAL4.html">page 4</a></li>
+        </ul>
+    </nav>
+    <div id="feature">
+        <h2>Silence Assassin</h2>
+        <img src="data:image/jpeg;base64,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" class="feature-img" />
+        <p class="feature-text">
+            Deathstroke: The Tactical Titan - Unraveling the Complexity of Batman's Formidable Adversary        </p>
+    </div>
+    <div id="main-content">
+        <article>
+            <h2>Relation to Batman</h2>
+            <figure class="main-figure">
+                <img src="https://static.dc.com/sites/default/files/imce/2018/05-MAY/DvB_2_5aea6deb4a48d4.41239643.jpg" />
+                <figcaption>
+                    <p>Deathstroke vs. Batman: Sins of the Fathers</p>
+                </figcaption>
+            </figure>
+            <p>Deathstroke's inclusion as a Batman villain is rooted in his unique combination of physical prowess, tactical genius, and moral ambiguity. Also known as Slade Wilson, Deathstroke is a formidable adversary for Batman due to his exceptional combat skills, enhanced physical attributes, and regenerative abilities. His superhuman reflexes and strategic thinking make him a deadly combatant, challenging Batman's own exceptional martial arts abilities. This combination of strength and intellect ensures that when the two face off, it's a battle of wits and physical prowess, providing readers and viewers with intense and thrilling showdowns.</p>
+        </article>
+        <article>
+            <h2>Complex Character</h2>
+            <p>Another compelling aspect of Deathstroke as a Batman villain is his morally complex character. Unlike some of Batman's more one-dimensional foes, Deathstroke often operates within a moral gray area. He is known for taking on contracts as a mercenary, sometimes for morally justifiable reasons, but at other times for more nefarious purposes. This moral ambiguity creates a layered dynamic when he crosses paths with Batman, who adheres to a strict code of ethics. This tension between their conflicting values adds depth to their confrontations, as Batman must navigate the blurred lines that Deathstroke operates within.</p>
+        </article>
+        <article>
+            <h2>Skills</h2>
+            <p>Furthermore, Deathstroke's intelligence and tactical brilliance make him a captivating adversary. He is not just a physical powerhouse but also a cunning strategist, often outsmarting Batman with well-laid plans and calculated moves. This aspect of his character forces Batman to rely on his detective skills and intellect as much as his physical abilities, showcasing the full range of his capabilities as a superhero. In summary, Deathstroke's multifaceted character, his unique combination of abilities, and his morally complex nature make him an intriguing and worthy addition to Batman's rogues' gallery, ensuring their encounters remain some of the most compelling and memorable in the Batman mythos.</p>
+        </article>
+    </div>
+    <div id="sidebar">
+        <article>
+            <h2>Subhead</h2>
+            <figure class="side-figure">
+                <img src="https://static.wikia.nocookie.net/ultimatepopculture/images/1/17/Deathstroke_textless_cover.jpg/revision/latest?cb=20191211182631" />
+                <figcaption>
+                    <p>Deathstroke 1990</p>
+                </figcaption>
+            </figure>
+            <p>Deathstroke, also known as Slade Wilson, was created by writer Marv Wolfman and artist George Pérez. He first appeared in "The New Teen Titans" #2, published by DC Comics in December 1980. Since his debut, Deathstroke has become one of DC Comics' most iconic and enduring characters, known for his exceptional combat skills, tactical genius, and complex moral ambiguity.
+
+
+
+
+            </p>
+        </article>
+    </div>
+    <footer>
+        <p><small>footer text</small></p>
+    </footer>
+</div>
+</body>
+</html>
